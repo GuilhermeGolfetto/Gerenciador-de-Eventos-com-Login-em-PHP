@@ -1,0 +1,22 @@
+use testenoweb;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id int(10) unsigned NOT NULL AUTO_INCREMENT,
+  nome varchar(100) NOT NULL,
+  usuario varchar(50) NOT NULL,
+  senha varchar(50) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+/* Substituir o xxx pelo usuario registrado
+*/
+CREATE TABLE IF NOT EXISTS xxx_registros(
+	id int(10) unsigned not null auto_increment,
+    id_usuarios int(10),
+    titulo varchar(100) not null,
+    descricao varchar(255),
+    dia varchar(25),
+    endImagem VARCHAR(255),
+    status VARCHAR(50),
+    primary key (id)
+    );
